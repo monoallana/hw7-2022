@@ -35,7 +35,7 @@ document.querySelector("#slower").addEventListener("click", function(){
 //CHECK THIS!!  If you slow down three times and then speed up three times you should be within 5 digits of 100% again.
 document.querySelector("#faster").addEventListener("click", function(){
 	console.log("speeding up by 10%...");
-	video.playbackRate *= 1.1;
+	video.playbackRate /= 0.9;
 	console.log("current playback rate is " + video.playbackRate);
 })
 
