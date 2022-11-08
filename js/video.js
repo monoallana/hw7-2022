@@ -44,7 +44,7 @@ document.querySelector("#faster").addEventListener("click", function(){
 //Log the current location of the video.
 document.querySelector("#skip").addEventListener("click", function(){
 	console.log("skipping ahead by 10 seconds...");
-	if (video.ended == true) {
+	if (video.currentTime + 10 >= video.duration) {
 		video.currentTime = 0;
 		console.log('video restarts')
 	} else {
